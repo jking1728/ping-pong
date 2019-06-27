@@ -31,11 +31,11 @@ $(document).ready(function() {
         };
         numberset.forEach(function(number) {
             if ((number % 3 === 0) && (number % 5 === 0)) {
-                $("ul#output").append("ping pong")
+                $("ul#output").append("<li>" + "ping pong" + "</li>")
             } else if (number % 3 === 0) {
-                $("ul#output").append("ping")
+                $("ul#output").append("<li>" + "ping" + "</li>")
             } else if (number % 5 === 0) {
-                $("ul#output").append("pong")
+                $("ul#output").append("<li>" + "pong" + "</li>")
             } else {
                 $("ul#output").append("<li>" + number + "</li>")
             }
