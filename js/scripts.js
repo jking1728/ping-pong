@@ -30,14 +30,14 @@ $(document).ready(function() {
             numberset.push(index);
         };
         numberset.forEach(function(number) {
-            if (number % 3 && number % 5) {
-                ("ul#output").append("<li>ping pong</li>")
-            } else if (number % 3) {
-                ("ul#output").append("<li>ping</li>")
-            } else if (number % 5) {
-                ("ul#output").append("<li>pong</li>")
+            if ((number % 3 === 0) && (number % 5 === 0)) {
+                $("ul#output").append("ping pong")
+            } else if (number % 3 === 0) {
+                $("ul#output").append("ping")
+            } else if (number % 5 === 0) {
+                $("ul#output").append("pong")
             } else {
-                ("ul#output").append("<li>" + number + "</li>")
+                $("ul#output").append("<li>" + number + "</li>")
             }
         })
     });
