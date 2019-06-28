@@ -23,6 +23,7 @@ $(document).ready(function() {
     $("form#input").submit(function(event) {
         event.preventDefault();
         var inputnumber = parseInt($("input#usernumber").val())
+        $("ul#output").empty("");
         
 
         var numberset = [];
@@ -39,7 +40,8 @@ $(document).ready(function() {
             } else {
                 $("ul#output").append("<li>" + number + "</li>")
             }
-        })
+        });
+        
     });
 });
 
