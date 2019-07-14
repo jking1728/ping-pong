@@ -24,7 +24,7 @@ _No known bugs._
 
 ## Support and contact details
 
-_jdnagel1@gmail.com_
+_suappeachx@gmail.com_
 
 ## Technologies Used
 
